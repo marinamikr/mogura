@@ -42,6 +42,6 @@ class CustomButton: UIButton {
     }
     
     func hideMogura() {
-        imageView?.image = nil
+        setImage(nil, for: .normal)
     }
 }
