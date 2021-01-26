@@ -14,19 +14,27 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mogura" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzJ-NU-eky" customClass="CustomButton" customModule="mogura" customModuleProvider="target">
-                                <rect key="frame" x="142" y="160" width="90" height="90"/>
+                                <rect key="frame" x="145" y="344" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="もぐら"/>
                                 <connections>
                                     <action selector="tap1" destination="BYZ-38-t0r" eventType="touchUpInside" id="JzR-Wk-YxY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-eP-NBj" customClass="CustomButton" customModule="mogura" customModuleProvider="target">
+                                <rect key="frame" x="74" y="211" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="もぐら"/>
+                                <connections>
+                                    <action selector="tap4" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjl-8C-Tx2"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ1-fZ-9rH" customClass="CustomButton" customModule="mogura" customModuleProvider="target">
-                                <rect key="frame" x="40" y="323" width="90" height="90"/>
+                                <rect key="frame" x="41" y="344" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="もぐら"/>
                                 <connections>
@@ -34,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf2-0E-ODV" customClass="CustomButton" customModule="mogura" customModuleProvider="target">
-                                <rect key="frame" x="242" y="323" width="90" height="90"/>
+                                <rect key="frame" x="243" y="344" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="もぐら"/>
                                 <connections>
@@ -42,7 +50,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aS6-kV-GH8">
-                                <rect key="frame" x="166" y="527" width="42" height="21"/>
+                                <rect key="frame" x="166" y="592" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -55,21 +63,77 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr8-2c-KUL">
+                                <rect key="frame" x="156" y="483" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="すたーと"/>
+                                <connections>
+                                    <action selector="start" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZP-kJ-rKG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2U-Br-Sw1" customClass="CustomButton" customModule="mogura" customModuleProvider="target">
+                                <rect key="frame" x="198" y="211" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="もぐら"/>
+                                <connections>
+                                    <action selector="tap5" destination="BYZ-38-t0r" eventType="touchUpInside" id="aky-0n-HGz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0zq-Uv-E2z"/>
                     <connections>
                         <outlet property="mogura1" destination="SzJ-NU-eky" id="LP8-AJ-0mD"/>
                         <outlet property="mogura2" destination="NQ1-fZ-9rH" id="wRt-0Z-2Kn"/>
                         <outlet property="mogura3" destination="Nf2-0E-ODV" id="m5P-ck-mhS"/>
+                        <outlet property="mogura4" destination="OfR-eP-NBj" id="5oa-Ux-wwD"/>
+                        <outlet property="mogura5" destination="W2U-Br-Sw1" id="nHf-gh-5AX"/>
                         <outlet property="time" destination="8Lb-ow-5LO" id="OwU-Tp-GS4"/>
                         <outlet property="total" destination="aS6-kV-GH8" id="9Ng-lN-qA5"/>
+                        <segue destination="ya4-Zn-FX7" kind="presentation" identifier="result" id="ccO-KQ-H0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="152.80000000000001" y="159.60591133004928"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="0Hn-mk-qvH">
+            <objects>
+                <viewController id="ya4-Zn-FX7" customClass="ResultViewController" customModule="mogura" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jdJ-51-VGd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="繋がりたい" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cz-Hr-Wqa">
+                                <rect key="frame" x="144" y="144" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrN-V0-ylw">
+                                <rect key="frame" x="149" y="422" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="もういちど"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="QTB-dw-l5F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4FZ-R4-hI5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hnC-qz-sqM"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="8cz-Hr-Wqa" id="1dj-Oz-mUI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lYN-I5-QKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877.60000000000002" y="142.61083743842366"/>
         </scene>
     </scenes>
     <designables>
@@ -79,7 +143,13 @@
         <designable name="Nf2-0E-ODV">
             <size key="intrinsicContentSize" width="73" height="37"/>
         </designable>
+        <designable name="OfR-eP-NBj">
+            <size key="intrinsicContentSize" width="73" height="37"/>
+        </designable>
         <designable name="SzJ-NU-eky">
+            <size key="intrinsicContentSize" width="73" height="37"/>
+        </designable>
+        <designable name="W2U-Br-Sw1">
             <size key="intrinsicContentSize" width="73" height="37"/>
         </designable>
     </designables>

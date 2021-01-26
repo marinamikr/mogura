@@ -6,6 +6,7 @@
 //  Copyright © 2021 原田摩利奈. All rights reserved.
 //
 
+
 import Foundation
 import UIKit
 @IBDesignable
@@ -42,6 +43,8 @@ class CustomButton: UIButton {
     }
     
     func hideMogura() {
+        //修正
         setImage(nil, for: .normal)
+        imageView?.image = nil
     }
 }
